@@ -23,13 +23,13 @@ const Navbar = () => {
           <img className="" src="../../../../public/10yrs-logo.png" alt="" />
         </NavLink>
       </div>
-      <div className="flex items-center gap-10 text-lg font-bold text-[#303838]">
+      <div className="flex items-center gap-10 text-lg font-bold text-white">
         {nav.map((n, index) => (
           <NavLink className={navClass} key={index} to={n.link}>
             {n.name}
           </NavLink>
         ))}
-        <button className="text-[#303838] border-2 border-[#303838] rounded-lg hover:text-[#D71921] hover:border-[#D71921] font-bold text-lg px-8 py-2 cursor-pointer flex items-center gap-2">
+        <button className="text-white border-2 border-white rounded-lg hover:text-[#D71921] hover:border-[#D71921] font-bold text-lg px-8 py-2 cursor-pointer flex items-center gap-2 duration-300">
           <IoCall />
           Let's Talk
         </button>
