@@ -1,25 +1,35 @@
 import React from "react";
 import { IoCall } from "react-icons/io5";
-import { Link } from "react-router";
+import { NavLink } from "react-router";
 
 const Navbar = () => {
+  const navClass = ({ isActive }) =>
+    `${isActive ? "text-[#D71921]" : ""} hover:text-[#D71921] duration-300`;
+
+  const nav = [
+    // { link: "/", name: "Home" },
+    { link: "/whoweare", name: "Who we are" },
+    { link: "/our-services", name: "Our Services" },
+    { link: "/our-works", name: "Our Works" },
+    { link: "/careers", name: "Careers" },
+    { link: "/blog", name: "Blog" },
+    { link: "/Contact", name: "Contact" },
+  ];
+
   return (
-    <div className="flex justify-around items-center max-w-7xl mx-auto py-4">
+    <div className="flex justify-between items-center max-w-7xl mx-auto py-4">
       <div>
-        <img className="" src="../../../../public/10yrs-logo.png" alt="" />
+        <NavLink to={"/"}>
+          <img className="" src="../../../../public/10yrs-logo.png" alt="" />
+        </NavLink>
       </div>
-      <div className="flex gap-10 font-medium text-[#303838]">
-        <Link className="font-medium" to="/">
-          Home
-        </Link>
-        <Link to="/whoweare">Who we are</Link>
-        <Link to="/our-services">Our Services</Link>
-        <Link to="/our-works">Our Works</Link>
-        <Link to="/careers">Careers</Link>
-        <Link to="/contact">Contact</Link>
-      </div>
-      <div className="border-2 border-[#D71921] rounded-2xl p-1">
-        <button className="bg-[#D71921] text-white font-bold px-8 py-2 rounded-xl cursor-pointer flex items-center gap-2">
+      <div className="flex items-center gap-10 text-lg font-bold text-[#303838]">
+        {nav.map((n, index) => (
+          <NavLink className={navClass} key={index} to={n.link}>
+            {n.name}
+          </NavLink>
+        ))}
+        <button className="text-[#303838] border-2 border-[#303838] rounded-lg hover:text-[#D71921] hover:border-[#D71921] font-bold text-lg px-8 py-2 cursor-pointer flex items-center gap-2">
           <IoCall />
           Let's Talk
         </button>
