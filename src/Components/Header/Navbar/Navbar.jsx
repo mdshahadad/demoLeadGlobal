@@ -1,6 +1,6 @@
-import React from "react";
 import { IoCall } from "react-icons/io5";
 import { NavLink } from "react-router";
+import logo from "../../../assets/banner/10yrs-logo.png";
 
 const Navbar = () => {
   const navClass = ({ isActive }) =>
@@ -20,7 +20,7 @@ const Navbar = () => {
     <div className="flex justify-between items-center max-w-7xl mx-auto py-4">
       <div>
         <NavLink to={"/"}>
-          <img className="" src="../../../../public/10yrs-logo.png" alt="" />
+          <img className="" src={logo} alt="" />
         </NavLink>
       </div>
       <div className="flex items-center gap-10 text-lg font-bold text-white">

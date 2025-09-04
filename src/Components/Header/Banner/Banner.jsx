@@ -5,6 +5,7 @@ import { SiTrustpilot } from "react-icons/si";
 import { Link } from "react-router";
 import { useEffect, useState } from "react";
 import ImgAnimation from "./ImgAnimation";
+import paperFly from "../../../assets/banner/paperFly-removebg-preview.png";
 
 const Banner = () => {
   const [loaded, setLoaded] = useState(false);
@@ -32,11 +33,7 @@ const Banner = () => {
             loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <img
-            src="../../../../public/paperFly-removebg-preview.png"
-            alt=""
-            className="red-img fly z-10"
-          />
+          <img src={paperFly} alt="" className="red-img fly z-10" />
         </div>
         <div
           className={`max-w-4xl mx-auto font-normal mt-10 text-white transition-all duration-2000 delay-200 ${
