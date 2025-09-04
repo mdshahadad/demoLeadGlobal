@@ -4,7 +4,7 @@ import { RiPoliceBadgeLine } from "react-icons/ri";
 
 const AboutIcons = () => {
   return (
-    <div className="flex justify-center gap-10 items-center mt-8">
+    <div className="flex justify-center gap-10 items-center mt-10">
       <div className="flex flex-col items-center text-center gap-2">
         <LuBadgePlus className="text-[#D71921] text-3xl" />
         <h5 className="text-xl font-bold -mt-1">10+ Years</h5>
