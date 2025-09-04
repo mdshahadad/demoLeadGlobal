@@ -1,0 +1,45 @@
+.red-img {
+  filter: invert(4%) sepia(30%) saturate(7500%) hue-rotate(-1deg)
+    brightness(85%);
+  width: 100px;
+}
+.show-animation {
+  transition: padding 0.4s ease;
+}
+
+.show-animation:hover {
+  padding-left: 3.5rem;
+}
+
+/* hidden by default */
+.paper-fly {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.7s ease, transform 0.5s ease;
+  pointer-events: none;
+}
+
+/* show smoothly on hover */
+.show-animation:hover .paper-fly {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Animation */
+@keyframes flyToCenter {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-69vw, -690px);
+    opacity: 1;
+  }
+}
+
+.fly {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  animation: flyToCenter 3s ease-out forwards;
+}
