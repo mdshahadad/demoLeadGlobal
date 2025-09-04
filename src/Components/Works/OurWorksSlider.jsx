@@ -35,18 +35,16 @@ const OurWorksSlider = () => {
   ];
 
   return (
-    <div className="w-2/3 mx-auto my-20">
+    <div className="w-7/8 mx-auto mt-20">
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         spaceBetween={50}
-        slidesPerView={3}
+        slidesPerView={2}
         loop={true}
-        navigation
-        pagination={{ clickable: true }}
-        autoplay={{ delay: 10, disableOnInteraction: false }}
+        autoplay={{ delay: 800, disableOnInteraction: false }}
         speed={2000}
       >
-        <div className="w-1/2 mx-auto">
+        <div>
           {slides.map((slide) => (
             <SwiperSlide key={slide.id}>
               <img src={slide.image} alt={`Slide ${slide.id}`} />

@@ -1,13 +1,13 @@
 import React from "react";
 
-const AboutTitle = () => {
+const TeamTitle = () => {
   return (
     <div>
       <h2 className="text-8xl font-extrabold uppercase leading-18 text-[#303838]">
-        One <br /> Stop <br /> Business <br /> Solution
+        The <br /> People <br /> Behind <br /> Success
       </h2>
     </div>
   );
 };
 
-export default AboutTitle;
+export default TeamTitle;
