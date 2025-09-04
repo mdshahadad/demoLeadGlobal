@@ -1,4 +1,6 @@
 import React from "react";
+import TeamParagraph from "./TeamParagraph";
+import TeamBtn from "./TeamBtn";
 
 const TeamTitle = () => {
   return (
