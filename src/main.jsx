@@ -6,7 +6,7 @@ import router from "./Routes/Routes.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <div className="bg-[#E4EEEC] h-screen">
+    <div className="h-screen">
       <RouterProvider router={router}></RouterProvider>
     </div>
   </StrictMode>

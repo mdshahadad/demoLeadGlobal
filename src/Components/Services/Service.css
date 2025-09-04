@@ -1,0 +1,15 @@
+.hover-effect:hover p {
+  display: none;
+}
+
+.hover-effect:hover h2 {
+  margin-top: 180px;
+  transition: 10s ease-out;
+  transition-duration: 500ms;
+}
+
+.hover-effect:hover > div:first-child {
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  transition-duration: 500ms;
+}

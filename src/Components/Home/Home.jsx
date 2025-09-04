@@ -2,10 +2,11 @@ import Navbar from "../Header/Navbar/Navbar";
 import Banner from "../Header/Banner/Banner";
 import About from "../About/About";
 import banner from "../../assets/banner/banner.jpg";
+import OurServices from "../Services/OurServices";
 
 const Home = () => {
   return (
-    <div className="home-container">
+    <div className="home-container bg-[#F9FAFB]">
       <div
         className={`"w-96 h-screen bg-cover bg-center bg-no-repeat"`}
         style={{ backgroundImage: `url(${banner})` }}
@@ -17,6 +18,7 @@ const Home = () => {
         </div>
       </div>
       <About></About>
+      <OurServices></OurServices>
     </div>
   );
 };
