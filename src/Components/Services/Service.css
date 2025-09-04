@@ -3,7 +3,7 @@
 }
 
 .hover-effect:hover h2 {
-  margin-top: 180px;
+  margin-top: 220px;
   transition: 10s ease-out;
   transition-duration: 500ms;
 }
