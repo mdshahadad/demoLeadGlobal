@@ -25,7 +25,42 @@
   transform: translateX(0);
 }
 
+.moving-container {
+  margin-top: 10vh;
+  position: absolute;
+  bottom: 3%;
+  width: 67%;
+  overflow: hidden;
+}
+
+.moving-container .moving-content img {
+  width: 80px;
+  height: 80px;
+}
+
+.moving-container .moving-content2 img {
+  width: 80px;
+  height: 80px;
+}
+
+.moving-content {
+  animation-name: moveLeft;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
 /* Animation */
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 @keyframes flyToCenter {
   0% {
     transform: translate(0, 0);
