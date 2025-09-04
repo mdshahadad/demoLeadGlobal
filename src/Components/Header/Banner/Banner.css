@@ -32,14 +32,14 @@
     opacity: 0;
   }
   100% {
-    transform: translate(-69vw, -690px);
+    transform: translate(-69vw, -300px);
     opacity: 1;
   }
 }
 
 .fly {
   position: absolute;
-  bottom: 0;
-  right: 0;
-  animation: flyToCenter 3s ease-out forwards;
+  bottom: 10;
+  right: 20;
+  animation: flyToCenter 4s ease-out forwards;
 }
