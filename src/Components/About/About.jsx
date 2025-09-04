@@ -1,13 +1,16 @@
-import roadMap from "../../assets/videos/Road_map (1).mp4";
+import AboutPara from "./AboutPara";
+import AboutTitle from "./AboutTitle";
+import AboutVideo from "./AboutVideo";
 
 const About = () => {
   return (
-    <div>
-      <video src="">
-        <source src={roadMap} type="video/map4" />
-      </video>
-      this is about
-    </div>
+    <section className="max-w-7xl mx-auto my-20">
+      <div className="flex gap-16">
+        <AboutTitle></AboutTitle>
+        <AboutPara></AboutPara>
+        {/* <AboutVideo></AboutVideo> */}
+      </div>
+    </section>
   );
 };
 

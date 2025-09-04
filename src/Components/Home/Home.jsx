@@ -14,9 +14,9 @@ const Home = () => {
         <div className="relative z-10 h-full text-white text-xl font-semibold">
           <Navbar></Navbar>
           <Banner></Banner>
-          <About></About>
         </div>
       </div>
+      <About></About>
     </div>
   );
 };
