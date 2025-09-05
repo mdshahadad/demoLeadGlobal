@@ -9,8 +9,8 @@ const OurServices = () => {
       <ServiceCard></ServiceCard>
       <section className="max-w-7xl mx-auto my-20">
         <div className="flex items-center gap-52">
-          <ServiceTitle></ServiceTitle>
-          <ServiceParagraph></ServiceParagraph>
+          {/* <ServiceTitle></ServiceTitle>
+          <ServiceParagraph></ServiceParagraph> */}
         </div>
       </section>
     </div>

@@ -26,10 +26,10 @@ const Home = () => {
       <div className="sm:hidden block">
         <div
           className={`" w-full
-        h-screen bg-cover bg-center bg-no-repeat"`}
+        h-[680px] bg-cover bg-center bg-no-repeat"`}
           style={{ backgroundImage: `url(${resBanner})` }}
         >
-          <div className="absolute inset-0 bg-black/70"></div>
+          <div className="absolute h-[680px] inset-0 bg-black/70"></div>
           <div className="relative z-10 h-full text-white text-xl font-semibold">
             <HeaderContent></HeaderContent>
           </div>
