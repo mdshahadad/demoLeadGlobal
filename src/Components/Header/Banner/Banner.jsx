@@ -22,7 +22,7 @@ const Banner = () => {
             loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <h1 className="lg:text-9xl text-4xl text-center font-extrabold lg:mt-20 mt-14 uppercase">
+          <h1 className="lg:text-9xl text-4xl text-center font-black lg:mt-20 mt-14 uppercase">
             Creative Ideas <br /> Lasting{" "}
             <span className="text-[#ff343e]">Growth</span>
           </h1>

@@ -5,7 +5,7 @@ import TeamBtn from "./TeamBtn";
 const TeamTitle = () => {
   return (
     <div>
-      <h2 className="text-8xl font-extrabold uppercase leading-18 text-[#303838]">
+      <h2 className="text-8xl font-black uppercase leading-18 text-[#303838]">
         The <br /> People <br /> Behind <br /> Success
       </h2>
     </div>
