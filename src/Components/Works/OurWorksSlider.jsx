@@ -6,10 +6,12 @@ import {
   Scrollbar,
   A11y,
   Autoplay,
+  Grid,
 } from "swiper/modules";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import "swiper/css/grid";
 import "./OurWorks.css";
 import slideOne from "../../assets/works/slideOne.jpg";
 import slideTwo from "../../assets/works/slideTwo.jpg";
@@ -37,10 +39,12 @@ const OurWorksSlider = () => {
   return (
     <div className="w-7/8 mx-auto mt-20">
       <Swiper
-        modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-        spaceBetween={50}
-        slidesPerView={2}
+        modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay, Grid]}
+        spaceBetween={10}
+        slidesPerView={3}
         loop={true}
+        fill={"row" | "column"}
+        rows={2}
         autoplay={{ delay: 800, disableOnInteraction: false }}
         speed={2000}
       >

@@ -15,7 +15,7 @@ const Banner = () => {
   }, []);
 
   return (
-    <section>
+    <section className="">
       <div className="relative">
         <div
           className={`transition-all duration-2000 ${
@@ -90,8 +90,11 @@ const Banner = () => {
           </Link>
         </div>
       </div>
-      <div>
-        <ImgAnimation></ImgAnimation>
+
+      <div className="flex justify-center">
+        <div className="absolute bottom-8">
+          <ImgAnimation></ImgAnimation>
+        </div>
       </div>
     </section>
   );
