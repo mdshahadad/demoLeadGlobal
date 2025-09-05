@@ -37,7 +37,7 @@ const OurWorksSlider = () => {
   ];
 
   return (
-    <div className="w-7/8 mx-auto mt-20">
+    <div className="lg:w-7/8 w-full mx-auto mt-20">
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay, Grid]}
         spaceBetween={10}
@@ -47,6 +47,28 @@ const OurWorksSlider = () => {
         rows={2}
         autoplay={{ delay: 800, disableOnInteraction: false }}
         speed={2000}
+        breakpoints={{
+          320: {
+            // phones
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          640: {
+            // small tablets
+            slidesPerView: 3,
+            spaceBetween: 15,
+          },
+          768: {
+            // tablets
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          1024: {
+            // desktops
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        }}
       >
         <div>
           {slides.map((slide) => (
