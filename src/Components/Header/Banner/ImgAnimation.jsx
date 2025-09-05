@@ -27,7 +27,7 @@ const ImgAnimation = () => {
     { id: 8, img: imgEight },
   ];
   return (
-    <div className="max-w-5xl mx-auto">
+    <div className="lg:max-w-5xl max-w-[300px] mx-auto">
       <Swiper
         modules={[Scrollbar, Autoplay]}
         spaceBetween={50}
@@ -35,10 +35,36 @@ const ImgAnimation = () => {
         loop={true}
         autoplay={{ delay: 0, disableOnInteraction: false }}
         speed={1000}
+        breakpoints={{
+          320: {
+            // phones
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          640: {
+            // small tablets
+            slidesPerView: 3,
+            spaceBetween: 15,
+          },
+          768: {
+            // tablets
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+          1024: {
+            // desktops
+            slidesPerView: 6,
+            spaceBetween: 30,
+          },
+        }}
       >
         {slider.map((slide) => (
           <SwiperSlide key={slide.id}>
-            <img className="w-52" src={slide.img} alt={`Slide ${slide.id}`} />
+            <img
+              className="lg:w-52 w-32"
+              src={slide.img}
+              alt={`Slide ${slide.id}`}
+            />
           </SwiperSlide>
         ))}
       </Swiper>

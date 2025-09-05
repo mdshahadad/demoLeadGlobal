@@ -55,7 +55,7 @@ const Navbar = () => {
       {/* Mobile Hamburger */}
       <div className="lg:hidden">
         <button onClick={() => setIsOpen(true)}>
-          <HiMenuAlt1 size={28} />
+          <HiMenuAlt1 size={44} />
         </button>
       </div>
 
@@ -73,7 +73,7 @@ const Navbar = () => {
             <div className="flex justify-between items-center mb-8">
               <img className="w-16" src={logo} alt="Logo" />
               <button onClick={() => setIsOpen(false)}>
-                <IoClose size={28} />
+                <IoClose size={44} />
               </button>
             </div>
 

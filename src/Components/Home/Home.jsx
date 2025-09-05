@@ -29,14 +29,14 @@ const Home = () => {
         h-screen bg-cover bg-center bg-no-repeat"`}
           style={{ backgroundImage: `url(${resBanner})` }}
         >
-          <div className="absolute inset-0 bg-black/90"></div>
+          <div className="absolute inset-0 bg-black/70"></div>
           <div className="relative z-10 h-full text-white text-xl font-semibold">
             <HeaderContent></HeaderContent>
           </div>
         </div>
       </div>
 
-      <HomeContent></HomeContent>
+      {/* <HomeContent></HomeContent> */}
     </div>
   );
 };
