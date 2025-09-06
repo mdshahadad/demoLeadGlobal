@@ -18,7 +18,7 @@ const Footer = () => {
     <div className="footer-container w-full bg-[#303838] static bottom-0 mt-20 lg:py-14 py-8">
       <div className="flex lg:flex-row flex-col lg:justify-around justify-center items-center lg:max-w-5xl w-full mx-auto space-y-10 lg:space-y-0">
         <div className="">
-          <div className="flex lg:flex-none flex-col items-center">
+          <div className="flex lg:flex-none flex-col lg:items-start items-center">
             <img src={logo} alt="" />
             <div className="space-y-2.5 mt-4 w-full">
               <p className="flex items-center gap-2 text-gray-300 hover:text-[#FF6467] cursor-pointer">
@@ -106,7 +106,7 @@ const Footer = () => {
       <div className="flex justify-center lg:max-w-5xl lg:mx-auto bg-[#1E2939] rounded-3xl my-12 p-14 mx-4">
         <div className="space-y-4">
           <h2 className="lg:text-3xl text-center text-2xl font-bold text-gray-200">
-            Stay Updated About <br /> Marketing Insights
+            Stay Updated About <br className="lg:hidden" /> Marketing Insights
           </h2>
           <p className="text-gray-400 text-center">
             Get the latest trends, strategies, and tips delivered to your inbox
@@ -137,7 +137,8 @@ const Footer = () => {
       <div className="flex lg:flex-row flex-col justify-between lg:max-w-5xl lg:mx-auto my-4 space-y-4">
         <div className="flex justify-center">
           <h4 className="text-gray-200 text-center">
-            &copy; {year} Lead Marketing Global. <br /> All rights reserved
+            &copy; {year} Lead Marketing Global. <br className="lg:hidden" />{" "}
+            All rights reserved
           </h4>
         </div>
         <div className="flex justify-center gap-4 text-gray-200">
