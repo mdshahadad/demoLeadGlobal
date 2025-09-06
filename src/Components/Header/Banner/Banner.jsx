@@ -22,7 +22,7 @@ const Banner = () => {
             loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <h1 className="lg:text-9xl text-4xl text-center font-black lg:mt-20 mt-14 uppercase">
+          <h1 className="2xl:text-9xl xl:text-8xl lg:text-7xl text-4xl text-center font-black lg:mt-20 mt-14 uppercase">
             Creative Ideas <br /> Lasting{" "}
             <span className="text-[#ff343e]">Growth</span>
           </h1>
@@ -40,7 +40,7 @@ const Banner = () => {
             loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <p className="text-white text-center lg:text-lg text-sm font-normal lg:mt-10 mt-6 transition-all duration-2000 delay-200 lg:mx-0 mx-4">
+          <p className="text-white text-center lg:text-lg text-sm font-normal lg:mt-10 mt-6 transition-all duration-2000 delay-200 xl:mx-0 lg:mx-8 mx-4">
             Lead Bangladesh Ltd. is a dynamic and visionary full-service
             marketing agency in Bangladesh that embarked on its transformative
             journey in 2015. At Lead Bangladesh, our foundation is built on a
@@ -49,7 +49,7 @@ const Banner = () => {
           </p>
         </div>
         <div
-          className={`flex justify-center lg:gap-10 gap-2 text-xl font-normal lg:mt-4 mt-6 text-white transition-all duration-2000 delay-200 ${
+          className={`flex justify-center lg:gap-10 gap-2 text-xl font-normal xl:mt-4 lg:mt-8 mt-6 text-white transition-all duration-2000 delay-200 ${
             loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
@@ -92,7 +92,7 @@ const Banner = () => {
       </div>
 
       <div className="flex justify-center">
-        <div className="absolute lg:bottom-8 bottom-18">
+        <div className="absolute 2xl:bottom-8 lg:bottom-8 bottom-18">
           <ImgAnimation></ImgAnimation>
         </div>
       </div>

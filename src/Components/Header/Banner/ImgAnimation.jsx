@@ -27,7 +27,7 @@ const ImgAnimation = () => {
     { id: 8, img: imgEight },
   ];
   return (
-    <div className="lg:max-w-5xl max-w-[300px] mx-auto">
+    <div className="xl:max-w-5xl lg:max-w-3xl max-w-[300px] mx-auto">
       <Swiper
         modules={[Scrollbar, Autoplay]}
         spaceBetween={50}

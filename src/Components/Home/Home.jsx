@@ -8,7 +8,7 @@ const Home = () => {
     <div className="home-container">
       {/* Desktop Version */}
 
-      <div className="hidden xl:block">
+      <div className="hidden lg:block">
         <div
           className={`" w-full
         h-screen bg-cover bg-center bg-no-repeat"`}

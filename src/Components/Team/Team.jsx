@@ -6,8 +6,8 @@ import TeamParagraph from "./TeamParagraph";
 const Team = () => {
   return (
     <section className="">
-      <div className="lg:max-w-[1500px] mx-auto">
-        <div className="lg:flex justify-center items-center lg:gap-32 my-20 w-full">
+      <div className="2xl:max-w-[1500px] xl:max-w-[1400px] mx-auto">
+        <div className="lg:flex justify-center items-center 2xl:gap-32 xl:gap-28 my-20 w-full">
           <TeamTitle></TeamTitle>
           <TeamSlide></TeamSlide>
         </div>

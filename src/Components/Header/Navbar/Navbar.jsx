@@ -31,7 +31,7 @@ const Navbar = () => {
   }, [isOpen]);
 
   return (
-    <div className="flex justify-between items-center max-w-7xl mx-auto py-4 px-4">
+    <div className="flex justify-between items-center xl:max-w-7xl mx-auto py-4 px-4">
       {/* Logo */}
       <div>
         <NavLink to={"/"}>
@@ -40,13 +40,13 @@ const Navbar = () => {
       </div>
 
       {/* Desktop Nav */}
-      <div className="hidden lg:flex items-center gap-10 text-lg font-bold text-white">
+      <div className="hidden lg:flex items-center 2xl:gap-10 gap-6 text-lg font-bold text-white">
         {nav.map((n, index) => (
           <NavLink className={navClass} key={index} to={n.link}>
             {n.name}
           </NavLink>
         ))}
-        <button className="text-white border-2 border-white rounded-lg hover:text-[#D71921] hover:border-[#D71921] font-bold text-lg px-8 py-2 cursor-pointer flex items-center gap-2 duration-300">
+        <button className="text-white border-2 border-white rounded-lg hover:text-[#D71921] hover:border-[#D71921] font-bold text-lg xl:px-8 px-5 py-2 cursor-pointer flex items-center gap-2 duration-300">
           <IoCall />
           Let's Talk
         </button>

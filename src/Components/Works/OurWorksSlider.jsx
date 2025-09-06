@@ -37,7 +37,7 @@ const OurWorksSlider = () => {
   ];
 
   return (
-    <div className="lg:w-7/8 w-full mx-auto mt-20">
+    <div className="lg:w-7/8 w-full mx-auto ml-7 mt-20">
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay, Grid]}
         spaceBetween={8}

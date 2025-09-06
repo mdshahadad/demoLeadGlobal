@@ -5,12 +5,12 @@ import "./Service.css";
 
 const ServiceCard = () => {
   return (
-    <div className="lg:flex justify-center gap-2 lg:mx-0 mx-4 lg:space-y-0 space-y-4">
+    <div className="lg:flex justify-center 2xl:gap-2 gap-4 2xl:mx-0 mx-4 lg:space-y-0 space-y-4">
       <div className="relative cursor-pointer hover-effect">
         <div className="absolute inset-0 bg-black/60 rounded"></div>
         <img src={servicesOne} alt="" className="rounded w-[500px]" />
         <div className="absolute lg:top-24 top-6 left-0 text-white p-4">
-          <h2 className="lg:text-[70px] text-5xl lg:leading-16 leading-9 font-extrabold uppercase">
+          <h2 className="2xl:text-[70px] lg:text-6xl text-5xl 2xl:leading-16 lg:leading-11 leading-9 font-extrabold uppercase">
             strategic Branding
           </h2>
           <p className="lg:mt-16 mt-10 lg:text-lg font-light">
@@ -27,7 +27,7 @@ const ServiceCard = () => {
         <div className="absolute inset-0 bg-black/60 rounded"></div>
         <img src={servicesTwo} alt="" className="rounded w-[500px]" />
         <div className="absolute lg:top-24 top-6 left-0 text-white p-4">
-          <h2 className="lg:text-[70px] text-5xl lg:leading-16 leading-9 font-extrabold uppercase">
+          <h2 className="2xl:text-[70px] lg:text-6xl text-5xl 2xl:leading-16 lg:leading-11 leading-9 font-extrabold uppercase">
             {" "}
             Visual production
           </h2>
@@ -44,7 +44,7 @@ const ServiceCard = () => {
         <div className="absolute inset-0 bg-black/60 rounded"></div>
         <img src={servicesThree} alt="" className="rounded w-[500px]" />
         <div className="absolute lg:top-24 top-6 left-0 text-white p-4">
-          <h2 className="lg:text-[70px] text-5xl lg:leading-16 leading-9 font-extrabold uppercase">
+          <h2 className="2xl:text-[70px] lg:text-6xl text-5xl 2xl:leading-16 lg:leading-11 leading-9 font-extrabold uppercase">
             {" "}
             Website design
           </h2>

@@ -5,7 +5,7 @@ import WorksParagraph from "./WorksParagraph";
 
 const OurWorks = () => {
   return (
-    <div className="flex lg:flex-row flex-col-reverse lg:max-w-[1550px] w-full justify-center items-center mx-auto lg:gap-16 my-20">
+    <div className="flex lg:flex-row flex-col-reverse lg:max-w-[1550px] w-full justify-between items-center mx-auto my-20">
       <div className="lg:w-3/5 w-full flex flex-col gap-8">
         <OurWorksSlider></OurWorksSlider>
         <WorksParagraph></WorksParagraph>
