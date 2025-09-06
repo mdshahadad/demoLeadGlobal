@@ -7,8 +7,8 @@ import AboutBtn from "./AboutBtn";
 
 const About = () => {
   return (
-    <section className="lg:max-w-7xl mx-auto my-20">
-      <div className="lg:flex items-center lg:gap-32 lg:mx-0 mx-4 lg:space-y-0 space-y-12">
+    <section className="xl:max-w-7xl lg:max-w-5xl xl:mx-auto my-20 lg:mx-4">
+      <div className="lg:flex items-center xl:gap-32 lg:gap-20 lg:mx-0 mx-4 lg:space-y-0 space-y-12">
         <AboutTitle></AboutTitle>
         <div>
           <AboutPara></AboutPara>
