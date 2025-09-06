@@ -10,7 +10,7 @@ const Home = () => {
 
       <div className="hidden lg:block">
         <div
-          className={`" w-full
+          className={`"w-full
         h-screen bg-cover bg-center bg-no-repeat"`}
           style={{ backgroundImage: `url(${banner})` }}
         >

@@ -9,7 +9,7 @@ const WorksParagraph = () => {
         <IoIosRocket className="text-2xl" />
         Our Latest Works
       </h5>
-      <p className="text-xl font-medium text-[#303838] leading-6 w-4/5">
+      <p className="text-xl font-medium text-[#303838] leading-6 lg:w-4/5">
         Discover how we've helped businesses worldwide achieve their lead
         generation goals and drive sustainable growth. Lorem, ipsum dolor sit
         amet consectetur adipisicing elit. Officiis, laborum! Lorem ipsum dolor

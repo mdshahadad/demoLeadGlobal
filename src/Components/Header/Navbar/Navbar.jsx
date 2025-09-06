@@ -46,16 +46,18 @@ const Navbar = () => {
             {n.name}
           </NavLink>
         ))}
-        <button className="text-white border-2 border-white rounded-lg hover:text-[#D71921] hover:border-[#D71921] font-bold text-lg xl:px-8 px-5 py-2 cursor-pointer flex items-center gap-2 duration-300">
-          <IoCall />
-          Let's Talk
-        </button>
+        <NavLink to={"/letsTalk"}>
+          <button className="text-white border-2 border-white rounded-lg hover:text-[#D71921] hover:border-[#D71921] font-bold text-lg xl:px-8 px-5 py-2 cursor-pointer flex items-center gap-2 duration-300">
+            <IoCall />
+            Let's Talk
+          </button>
+        </NavLink>
       </div>
 
       {/* Mobile Hamburger */}
       <div className="lg:hidden">
         <button onClick={() => setIsOpen(true)}>
-          <HiMenuAlt1 size={44} />
+          <HiMenuAlt1 className="text-white" size={44} />
         </button>
       </div>
 
@@ -88,10 +90,12 @@ const Navbar = () => {
                   {n.name}
                 </NavLink>
               ))}
-              <button className="mt-6 text-white border-2 border-white rounded-lg hover:text-[#D71921] hover:border-[#D71921] font-bold text-lg px-6 py-2 cursor-pointer flex justify-center items-center gap-2 duration-300">
-                <IoCall />
-                Let's Talk
-              </button>
+              <NavLink to={"/letsTalk"}>
+                <button className="mt-6 text-white border-2 border-white rounded-lg hover:text-[#D71921] hover:border-[#D71921] font-bold text-lg px-6 py-2 cursor-pointer flex justify-center items-center gap-2 duration-300">
+                  <IoCall />
+                  Let's Talk
+                </button>
+              </NavLink>
             </nav>
           </div>
         </div>

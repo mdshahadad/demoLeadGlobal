@@ -34,22 +34,22 @@ const Footer = () => {
               </p>
 
               <ul className="flex lg:justify-start justify-center gap-3 mt-5">
-                <Link>
+                <Link to={"https://www.facebook.com/LeadBangladesh/"}>
                   <li>
                     <IoLogoLinkedin className="text-3xl hover:text-[#0A66C2] text-gray-400" />{" "}
                   </li>
                 </Link>
-                <Link>
+                <Link to={"https://www.facebook.com/LeadBangladesh/"}>
                   <li>
                     <FaFacebook className="text-3xl hover:text-[#1877F2] text-gray-400" />{" "}
                   </li>
                 </Link>
-                <Link>
+                <Link to={"https://www.facebook.com/LeadBangladesh/"}>
                   <li>
                     <FaInstagram className="text-3xl hover:text-[#E4405F] text-gray-400" />{" "}
                   </li>
                 </Link>
-                <Link>
+                <Link to={"https://www.facebook.com/LeadBangladesh/"}>
                   <li>
                     <FaYoutube className="text-3xl hover:text-[#CD201F] text-gray-400" />{" "}
                   </li>
