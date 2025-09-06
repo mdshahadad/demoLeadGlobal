@@ -71,7 +71,7 @@ const TeamSlide = () => {
         <div>
           {slides.map((slide) => (
             <SwiperSlide key={slide.id}>
-              <div className="rounded-2xl lg:w-[290px] w-[173px] lg:h-[500px]">
+              <div className="rounded-2xl xl:w-[290px] lg:w-[250px] w-[173px] xl:h-[500px]">
                 <img
                   className="rounded-2xl"
                   src={slide.image}

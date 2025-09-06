@@ -16,7 +16,7 @@ const Footer = () => {
   console.log(date, year);
   return (
     <div className="footer-container w-full bg-[#303838] static bottom-0 mt-20 lg:py-14 py-8">
-      <div className="flex lg:flex-row flex-col lg:justify-around justify-center items-center lg:max-w-5xl w-full mx-auto space-y-10 lg:space-y-0">
+      <div className="flex lg:flex-row flex-col lg:justify-around justify-center items-center xl:max-w-5xl lg:max-w-4xl w-full mx-auto space-y-10 lg:space-y-0">
         <div className="">
           <div className="flex lg:flex-none flex-col lg:items-start items-center">
             <img src={logo} alt="" />
@@ -103,7 +103,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center lg:max-w-5xl lg:mx-auto bg-[#1E2939] rounded-3xl my-12 p-14 mx-4">
+
+      {/* Email Subscribe Section */}
+      <div className="flex justify-center xl:max-w-5xl lg:max-w-4xl lg:mx-auto bg-[#1E2939] rounded-3xl my-12 p-14 mx-4">
         <div className="space-y-4">
           <h2 className="lg:text-3xl text-center text-2xl font-bold text-gray-200">
             Stay Updated About <br className="lg:hidden" /> Marketing Insights
@@ -131,10 +133,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="lg:max-w-5xl lg:mx-auto mx-4 text-gray-400">
+      <div className="xl:max-w-5xl lg:max-w-4xl lg:mx-auto mx-4 text-gray-400">
         <hr />
       </div>
-      <div className="flex lg:flex-row flex-col justify-between lg:max-w-5xl lg:mx-auto my-4 space-y-4">
+      <div className="flex lg:flex-row flex-col justify-between xl:max-w-5xl lg:max-w-4xl lg:mx-auto my-4 space-y-4">
         <div className="flex justify-center">
           <h4 className="text-gray-200 text-center">
             &copy; {year} Lead Marketing Global. <br className="lg:hidden" />{" "}

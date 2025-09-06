@@ -1,5 +1,5 @@
 import { IoCall, IoClose } from "react-icons/io5";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 import logo from "../../../assets/banner/10yrs-logo.png";
 import { useEffect, useState } from "react";
 import { HiMenuAlt1 } from "react-icons/hi";
@@ -80,6 +80,9 @@ const Navbar = () => {
             </div>
 
             <nav className="flex flex-col gap-4 text-lg font-bold">
+              <Link to={"/"}>
+                <p>Home</p>
+              </Link>
               {nav.map((n, index) => (
                 <NavLink
                   className={navClass}
@@ -91,7 +94,10 @@ const Navbar = () => {
                 </NavLink>
               ))}
               <NavLink to={"/letsTalk"}>
-                <button className="mt-6 text-white border-2 border-white rounded-lg hover:text-[#D71921] hover:border-[#D71921] font-bold text-lg px-6 py-2 cursor-pointer flex justify-center items-center gap-2 duration-300">
+                <button
+                  className="mt-6 text-white border-2 border-white rounded-lg hover:text-[#D71921] hover:border-[#D71921] font-bold text-lg px-6 py-2 cursor-pointer flex justify-center items-center gap-2 duration-300"
+                  onClick={() => setIsOpen(false)}
+                >
                   <IoCall />
                   Let's Talk
                 </button>
