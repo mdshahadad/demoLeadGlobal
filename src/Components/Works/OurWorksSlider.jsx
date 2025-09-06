@@ -40,7 +40,7 @@ const OurWorksSlider = () => {
     <div className="lg:w-7/8 w-full mx-auto mt-20">
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay, Grid]}
-        spaceBetween={10}
+        spaceBetween={8}
         slidesPerView={3}
         loop={true}
         fill={"row" | "column"}
@@ -66,7 +66,7 @@ const OurWorksSlider = () => {
           1024: {
             // desktops
             slidesPerView: 3,
-            spaceBetween: 30,
+            spaceBetween: 10,
           },
         }}
       >

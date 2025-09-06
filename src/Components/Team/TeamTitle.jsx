@@ -4,8 +4,8 @@ import TeamBtn from "./TeamBtn";
 
 const TeamTitle = () => {
   return (
-    <div>
-      <h2 className="text-8xl font-black uppercase leading-18 text-[#303838]">
+    <div className="mx-4 lg:mx-0">
+      <h2 className="lg:text-8xl text-6xl font-black uppercase lg:leading-18 leading-12 text-[#303838]">
         The <br /> People <br /> Behind <br /> Success
       </h2>
     </div>

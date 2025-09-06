@@ -10,7 +10,7 @@ const TeamParagraph = () => {
         <IoIosRocket className="text-2xl" />
         Our Team Members
       </h5>
-      <p className="text-xl font-medium text-red-700 leading-6 text-center w-1/2 mx-auto">
+      <p className="text-xl font-medium text-red-700 leading-6 text-center lg:w-1/2 w-full mx-auto">
         Discover how we've helped businesses worldwide achieve their lead. Lorem
         ipsum dolor sit amet consectetur adipisicing elit. Iste, sequi.
       </p>

@@ -34,7 +34,7 @@ const TeamSlide = () => {
     { id: 9, image: slideNine },
   ];
   return (
-    <div className="w-3/5 mx-auto">
+    <div className="lg:w-3/5 lg:-ml-0 -ml-5 w-full mx-auto rounded-2xl mt-10 lg:mt-0">
       <Swiper
         modules={[Autoplay, EffectCoverflow]}
         spaceBetween={5}
@@ -45,11 +45,33 @@ const TeamSlide = () => {
         autoplay={{ delay: 800, disableOnInteraction: false }}
         speed={2000}
         style={{ padding: "12px" }}
+        breakpoints={{
+          320: {
+            // phones
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+          640: {
+            // small tablets
+            slidesPerView: 3,
+            spaceBetween: 15,
+          },
+          768: {
+            // tablets
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          1024: {
+            // desktops
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        }}
       >
         <div>
           {slides.map((slide) => (
             <SwiperSlide key={slide.id}>
-              <div className="rounded-2xl bg-amber-500 w-[290px] h-[500px]">
+              <div className="rounded-2xl lg:w-[290px] w-[173px] lg:h-[500px]">
                 <img
                   className="rounded-2xl"
                   src={slide.image}
